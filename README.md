@@ -8,7 +8,7 @@
 
 ## ③DEMO
 
-https://aki5212.github.io/04_memo1_app/
+https://github.com/aki5212/04_memopad_app.git
 
 ## ④作ったアプリケーション用のIDまたはPasswordがある場合
 
