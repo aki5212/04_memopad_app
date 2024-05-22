@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>かわいいメモ帳</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="memo-container">
+        <h1>かわいいメモ帳</h1>
+        <textarea id="memo" placeholder="ここにメモを入力してください..."></textarea>
+        <div id="charCount">文字数: 0</div>
+        <div class="controls">
+            <select id="fontSelect">
+                <option value="Arial">Arial</option>
+                <option value="Verdana">Verdana</option>
+                <option value="Times New Roman">Times New Roman</option>
+                <option value="Courier New">Courier New</option>
+            </select>
+            <select id="fontSizeSelect">
+                <option value="14px">14px</option>
+                <option value="16px">16px</option>
+                <option value="18px">18px</option>
+                <option value="20px">20px</option>
+                <option value="24px">24px</option>
+            </select>
+            <select id="bgColorSelect">
+                <option value="white">ホワイト</option>
+                <option value="lightblue">ライトブルー</option>
+                <option value="lightpink">ライトピンク</option>
+                <option value="lightgreen">ライトグリーン</option>
+            </select>
+            <button onclick="document.execCommand('undo')">やり直し</button>
+
+        </div>
+        <button id="saveButton">保存</button>
+        <div id="savedMemos"></div>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>
